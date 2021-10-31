@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Navigation } from './components/Navigation';
 import { BasicLoader } from "./loaders/BasicLoader";
-
+import { DotLoader } from "./loaders/DotLoader";
 function App() {
   return (
     <>
@@ -9,6 +9,8 @@ function App() {
       <Layout>
         <h1>Basic Loader</h1>
         <BasicLoader />
+        <h1>Dot Loader</h1>
+        <DotLoader />
       </Layout>
     </>
   );
