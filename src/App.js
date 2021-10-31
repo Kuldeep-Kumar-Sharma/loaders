@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components"
+import { Navigation } from './components/Navigation';
+import { BasicLoader } from "./loaders/BasicLoader";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation title="Styled Loaders.." />
+      <Layout>
+        <h1>Basic Loader</h1>
+        <BasicLoader />
+      </Layout>
+    </>
   );
 }
+      
+
+const Layout = styled.div`
+  flex-direction: column;
+  max-width: 60em;
+  margin: 0 auto;
+`;
+
+
+      
+
 
 export default App;
